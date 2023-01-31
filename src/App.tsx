@@ -1,3 +1,4 @@
+import ErrorDisplay from "./components/ErrorDisplay/ErrorDisplay";
 import SearchForm from "./components/SearchForm/SearchForm";
 import "./index.css";
 
@@ -11,11 +12,7 @@ function App() {
         </div>
       </div>
 
-      <div className="row">
-        <p className="error text-danger col">
-          Error: I couldn't retrieve anything funny
-        </p>
-      </div>
+      <ErrorDisplay />
     </div>
   );
 }
